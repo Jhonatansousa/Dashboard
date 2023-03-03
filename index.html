@@ -5,11 +5,95 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>DashBoard</title>
+  <link rel="stylesheet" href="/style.css">
+
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
 </head>
 
 <body>
+  <main id="dash" class="grid">
+    <div class="cards">
+      <div class="box NPS">
+        <h1>NPS Geral</h1>
+        <div class="excelente">
 
+          <img src="/assets/Group 3.svg" alt="">
+          <h2>Excelente!</h2>
+
+        </div>
+        <p>NPS Score 75</p>
+      </div>
+
+      <div class="box vendas">
+        <h1>Vendas Fechadas</h1>
+        <div>
+          <div>
+            <div class="radius1">
+              <img src="/assets/Group 6.svg" alt="">
+              <div class="center-text">
+                <h1>70%</h1>
+                <p>alcançada</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="esperado">
+          <p class="first">Esperado 100</p>
+          <p class="second">Alcançado 70</p>
+        </div>
+      </div>
+
+      <div class="box meta">
+        <h1>Meta Mensal</h1>
+        <div>
+          <div class="radius2">
+            <img src="/assets/Group 7.svg" alt="">
+            <div class="center-text">
+              <h1>90%</h1>
+              <p>alcançada</p>
+
+            </div>
+
+          </div>
+        </div>
+        <div class="esperado">
+          <p class="first">Esperado R$ 70K</p>
+          <p class="second">Alcançado R$ 63K</p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="box week-section">
+      <div>
+        <h1>Vendas por dia da semana</h1>
+        <div class="week">
+          <div class="day">
+            <p><span class="arrow-up"><img src="/assets/seta cima.svg" alt=""></span>Dia com mais vendas</p>
+            <h3>quarta-feira</h3>
+            <p><span class="arrow-down"><img src="/assets/seta baixo.svg" alt=""></span>Dia com menos vendas</p>
+            <h3>domingo</h3>
+          </div>
+          <div class="days-week">
+            <span class="line"></span>
+            <p><span class="line-day dom"></span> dom</p>
+            <p><span class="line-day seg"></span>seg</p>
+            <p><span class="line-day ter"></span>ter</p>
+            <p><span class="line-day qua"></span>qua</p>
+            <p><span class="line-day qui"></span>qui</p>
+            <p><span class="line-day sex"></span>sex</p>
+            <p><span class="line-day sab"></span>sab</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </main>
 </body>
 
 </html>

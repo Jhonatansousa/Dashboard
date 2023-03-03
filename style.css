@@ -1,0 +1,236 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+:root {
+  --color-card: #363447;
+  --shadow: 3px 4px 26px rgba(0, 0, 0, 0.25);
+  --border-radius: 16px;
+}
+
+
+body {
+  background-color: #363447;
+  color: white;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+.grid {
+  display: grid;
+}
+
+#dash {
+  min-width: 100vw;
+  min-height: 100vh;
+  width: fit-content;
+  height: fit-content;
+  place-content: center;
+}
+
+
+.cards {
+  display: grid;
+  place-content: center;
+  grid-template-columns: max-content max-content max-content;
+  gap: 2rem;
+}
+
+.NPS,
+.vendas,
+.meta {
+  background-color: var(--color-card);
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  height: 23.7rem;
+}
+
+/* HOVER CONFIG */
+.NPS:hover {
+  transform: scale(1.1);
+  transition: .4s;
+  background-color: #4c4964;
+  border: #81FBB8 1px solid;
+}
+
+.vendas:hover {
+  transform: scale(1.1);
+  transition: .4s;
+  background-color: #4c4964;
+  border: #81FBB8 1px solid;
+}
+
+.meta:hover {
+  transform: scale(1.1);
+  transition: .4s;
+  background-color: #4c4964;
+  border: #81FBB8 1px solid;
+}
+
+.week-section:hover {
+  transform: scale(1.1);
+  transition: .4s;
+  background-color: #4c4964;
+  border: #81FBB8 1px solid;
+}
+
+/* HOVER CONFIG */
+
+.NPS {
+  width: 18.5rem;
+  margin: 7rem 2rem 3.7rem 7.7rem;
+}
+
+.NPS h2 {
+  color: #81FBB8;
+}
+
+.vendas {
+  width: 22rem;
+  margin: 7rem 0 3.7rem 0;
+}
+
+.vendas img {
+  width: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+
+
+
+.esperado {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.meta {
+  width: 25.5rem;
+  margin: 7rem 7.7rem 3.7rem 2rem;
+
+}
+
+.radius1,
+.radius2 {
+  position: relative;
+}
+
+.radius2 img {
+  position: absolute;
+  width: 45%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+/* week */
+.week-section {
+  margin: 3.7rem auto;
+  padding: 1.8rem 3rem;
+  background-color: var(--color-card);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  height: fit-content;
+  width: 70rem;
+}
+
+.week-section h1 {
+  margin-bottom: 2rem;
+}
+
+.day p {
+  margin-bottom: 0.5rem;
+}
+
+.day h3 {
+  margin-bottom: 2rem;
+}
+
+.week {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.days-week {
+  display: flex;
+  gap: 3.7rem;
+  align-items: flex-end;
+}
+
+.arrow-up,
+.arrow-down {
+  margin-right: .3rem;
+}
+
+.line {
+  padding: 2px;
+  margin: auto;
+  width: 34rem;
+  background: hsla(257, 11%, 30%, 1);
+  position: absolute;
+  top: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.days-week p {
+  position: relative;
+}
+
+.line-day {
+  position: absolute;
+  padding: .5rem;
+  background: linear-gradient(180deg, #90F7EC 0%, #32CCBC 100%);
+  top: -110%;
+  right: 20%;
+  border-radius: var(--border-radius);
+}
+
+.dom {
+  height: 1rem;
+  top: -200%;
+}
+
+.seg {
+  height: 5rem;
+  top: -530%;
+}
+
+.ter {
+  height: 3.6rem;
+  top: -400%;
+}
+
+.qua {
+  height: 7.2rem;
+  top: -700%;
+}
+
+.qui {
+  height: 6rem;
+  top: -600%;
+}
+
+.sex {
+  height: 5.8rem;
+  top: -580%;
+}
+
+.sab {
+  height: 3.3rem;
+  top: -369%;
+}
