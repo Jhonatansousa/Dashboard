@@ -291,7 +291,7 @@ label {
 .slider:before {
   position: absolute;
   content: "";
-  background-image: url(/assets/contrast.png);
+  background-image: url(assets/contrast.png);
   background-size: 1.4rem;
   display: block;
   height: 1.4rem;
@@ -310,7 +310,7 @@ input:checked+.slider {
 input:checked+.slider:before {
   left: calc(100% - 1.7rem);
   background: rgb(215, 215, 228);
-  background-image: url(/assets/sun.png);
+  background-image: url(assets/sun.png);
   background-size: 1.4rem;
   display: block;
 }
