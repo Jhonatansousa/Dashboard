@@ -276,6 +276,19 @@ label {
   height: 0;
 }
 
+body.dark .switch {
+  color: rgba(0, 0, 0, 0.822);
+}
+
+.switch::after {
+  content: 'Dark Mode';
+  position: absolute;
+  left: 4.3rem;
+  font-weight: bold;
+
+
+}
+
 .slider {
   position: absolute;
   cursor: pointer;
@@ -291,9 +304,11 @@ label {
 .slider:before {
   position: absolute;
   content: "";
-  background-image: url(assets/contrast.png);
-  background-size: 1.4rem;
-  display: block;
+  background-color: rgba(5, 4, 46, 0.692);
+  transform: rotate(45deg);
+  box-shadow: -4px 2px 10px 1px white;
+  border-radius: 0 0 50px 50px;
+
   height: 1.4rem;
   width: 1.4rem;
   border-radius: 20px;
@@ -310,9 +325,8 @@ input:checked+.slider {
 input:checked+.slider:before {
   left: calc(100% - 1.7rem);
   background: rgb(215, 215, 228);
-  background-image: url(assets/sun.png);
-  background-size: 1.4rem;
-  display: block;
+  background-color: rgb(255, 255, 0);
+  box-shadow: 0 0 20px 5px #ffcc00;
 }
 
 @media (max-width: 1400px) {
