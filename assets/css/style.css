@@ -14,6 +14,9 @@
 body {
   background-color: #363447;
   color: white;
+  display: grid;
+  place-items: center;
+
 }
 
 h1 {
@@ -22,6 +25,8 @@ h1 {
 
 .grid {
   display: grid;
+  width: 100vw;
+  height: 100vw;
 }
 
 #dash {
@@ -261,7 +266,6 @@ label {
 
 .switch {
   position: relative;
-  /* you can change width and height */
   width: 4rem;
   height: 2.5rem;
 }
@@ -279,8 +283,6 @@ label {
   left: 0;
   right: 0;
   bottom: 0;
-
-  /* you can change the color of slider */
   background-color: #26263b;
   transition: .4s;
   border-radius: 30px;
@@ -311,4 +313,48 @@ input:checked+.slider:before {
   background-image: url(/assets/sun.png);
   background-size: 1.4rem;
   display: block;
+}
+
+@media (max-width: 1400px) {
+  label {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .cards {
+    grid-template-columns: max-content;
+    margin: auto;
+  }
+
+  .box:nth-child(1) {
+    margin-top: 3rem;
+  }
+
+  .box {
+    margin: auto;
+    width: 20rem;
+  }
+
+  .week-section {
+    display: grid;
+    grid-template-columns: max-content;
+    margin-top: 2rem;
+    width: 19.5rem;
+  }
+
+  .week {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .days-week {
+    margin-top: 10rem;
+    height: 0rem;
+    gap: 1.5rem;
+  }
+
+  .line {
+    width: 20.5rem;
+    top: 15rem;
+  }
 }
